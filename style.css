@@ -63,10 +63,12 @@ input[type="text"],[type="password"]{
 
 .username-input, .password-input{
     margin: 10px;
+    box-shadow: 0px 0px 10px aqua;
 }
 
 label {
     flex-basis: 130px;
+    padding: 10px;
 }
 
 .username-input, .password-input, .login-button
