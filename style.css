@@ -1,0 +1,64 @@
+body
+{
+    display:flex;
+    margin: 0px;
+    padding: 0px;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+
+    background-color: black;
+}
+
+#background-pattern{
+    height: 100vh;
+    width: 100vw;
+
+    background-image: radial-gradient(
+        rgba(2255,255,255,0.1) 9%,
+        transparent 9%
+    );
+    background-position: 0% 0%;
+    background-size: 12vmin 12vmin;
+
+    position: absolute;
+}
+
+.login-card {
+    /*sizes*/
+    width: 25vw;
+    height: 40vh;
+    
+    /*flex-box*/
+    display:flex;
+    align-self: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+    /*Make it look nice*/
+    background-color: gray;
+    border-radius: 5%;
+    
+}
+
+input[type="text"],[type="password"]{
+    padding: 10px;
+    font-size: 18px;
+
+}
+
+.username-input, .password-input{
+    margin: 10px;
+}
+
+label {
+    flex-basis: 130px;
+}
+
+.username-input, .password-input, .login-button
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
