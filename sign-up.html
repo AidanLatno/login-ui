@@ -3,30 +3,33 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width-device-width, initial-scale-1.0">
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
         <link rel="stylesheet" href="style.css">
-        <title>Document</title>
+        <title>Sign-up</title>
     </head>
     <body>
         <div id="background-pattern"></div>
 
         <div class="login-card">
+            <h1>Account Signup</h1>
             <form>
-                <h1>Account Signup</h1>
                 <div class="flex-input">
                     <div class="username-input">
-                        <label>Username: </label>
-                        <input type="text">
+                        <label>Username:</label>
+                        <input type="text" placeholder="Username">
                     </div>
                     <div class="password-input">
-                        <label>Password: </label>
-                        <input type="password">
+                        <label>Password:</label>
+                        <input type="password" placeholder="Password">
                     </div>
                 </div>
                 <div class="login-button">
-                    <input type="button" value="SIGNUP">
+                    <button type="button" class="btn btn-primary">SIGNUP</button>
                 </div>
-                    <a href="index.html" id="login-link">Already have an account? Login here!</a>
             </form>
+            <a href="index.html">Already have an account? Login here!</a>
         </div>
     </body>
 </html>

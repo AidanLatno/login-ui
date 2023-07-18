@@ -4,25 +4,26 @@ body
     margin: 0px;
     padding: 0px;
     height: 100vh;
+    overflow: hidden;
     justify-content: center;
     align-items: center;
 
-    background-color: black;
+    background: linear-gradient(#9198e5,#e66465);
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 #background-pattern{
     animation-name:move;
     animation-duration: 4000ms;
-    animation-timing-function: linear;
+    animation-timing-function:ease;
     animation-iteration-count:infinite;
 
     height: 200vh;
     width: 200vw;
 
     background-image: radial-gradient(
-        rgba(0,255,255,0.1) 9%,
-        transparent 9%
+        rgba(0, 255, 200, 0.5) 10%,
+        transparent 20%
     );
     background-position: 0% 0%;
     background-size: 12vmin 12vmin;
@@ -44,9 +45,10 @@ body
     justify-content: space-evenly;
 
     /*Make it look nice*/
-    background-color: rgba(10, 193, 193, 0.4);
+    /* background-color: rgba(10, 193, 193, 0.4); */
+    background: linear-gradient(#e66465, #9198e5);
     border-radius: 5%;
-    box-shadow: 10px 5px 5px rgb(13, 145, 101);
+    box-shadow: 6px 6px 5px #cd91e5;
     
     
     z-index: 2;
@@ -83,23 +85,23 @@ label {
 
 @keyframes move {
     0% {
-        top: -50px;
-        left: -50px;
+        top: -70px;
+        left: -70px;
       }
       25%{
-        top: 30px;
-        left: 30px;
+        top: 10px;
+        left: 10px;
       }
     50% {
-        top: -50px;
-        left: 30px;
+        top: -70px;
+        left: 10px;
       }
       75%{
-        top: -20px;
-        left: -50px;
+        top: 10px;
+        left: -70px;
       }
       100%{
-        top: -50px;
-        left: -50px;
+        top: -70px;
+        left: -70px;
       }
 }
